@@ -1,7 +1,10 @@
-#Revenant
+# Revenant
 Set of tools created to interact with Revenant content (RPG game by Cinematix studios, released in 1999 by the publisher Eidos Interactive)
 
-##MAP processing (dat and bmp files related to game maps)
+## MAP processing (dat and bmp files related to game maps)
+
+[Example of automap](Example%20of%20automap.png)
+
 **Example 1: save automaps from given directory**
 When you play Revenant, that small map in lower right corner of the screen is called automap. Automap is built out of
 small *.bmp files located in module file. This script is stitching that small files into a single big image.
