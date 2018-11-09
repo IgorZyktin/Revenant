@@ -3,7 +3,9 @@
 Set of tools created to interact with Revenant content (RPG game by Cinematix studios, released in 1999 by the publisher Eidos Interactive)
 
 ## MAP processing (dat and bmp files related to game maps)
-[Example of automap](Example%20of%20automap.png)
+<br>
+<img src="https://github.com/IgorZyktin/Revenant/blob/master/Example%20of%20automap.png" alt="automap">
+
 **Example 1: save automaps from given directory**
 When you play Revenant, that small map in lower right corner of the screen is called automap. Automap is built out of
 small *.bmp files located in module file. This script is stitching that small files into a single big image.
@@ -43,6 +45,11 @@ represents already visited places in game world.
 </code></pre>
 
 **DAT processing (dat files related to the game menu)**
+<br>
+<img src="https://github.com/IgorZyktin/Revenant/blob/master/Example%20of%20color%20encoding.png" alt="dat file">
+<br>
+<img src="https://github.com/IgorZyktin/Revenant/blob/master/Example%20of%20color%20encoding.png" alt="dat file">
+
 Game uses strange color encoding system, similar to r5g5b5a1 (five bits for color and on for alpha channel). But encoding bits are shifted for some reason.
 
 Real ingame color format is: [G3][G4][G5][B1][B2][B3][B4][B5][A][R1][R2][R3][R4][R5][G1][G2]</p>
