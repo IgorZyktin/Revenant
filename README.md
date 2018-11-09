@@ -7,6 +7,7 @@ Set of tools created to interact with Revenant content (RPG game by Cinematix st
 <img src="https://github.com/IgorZyktin/Revenant/blob/master/Example%20of%20automap.png" alt="automap">
 
 **Example 1: save automaps from given directory**
+<br>
 When you play Revenant, that small map in lower right corner of the screen is called automap. Automap is built out of
 small *.bmp files located in module file. This script is stitching that small files into a single big image.
 
@@ -20,6 +21,7 @@ stitch_automaps(data)
 </code></pre>
 
 **Example 3: save heatmaps from given directory**
+<br>
 Whole game world in Revenant is built like a mesh out of small *.dat files. Each map file contains data about any objects
 located there. When you play the game, all changes in game world (all differences from original map *.dat files). are saved in your
 savegame directory. Unfortunately, original map files were created in proprietary format. Therefore heatmaps are the best we could get
@@ -36,6 +38,7 @@ stitch_heatmaps(data)
 </code></pre>
 
 **Example 5: write player's progress over default game map**
+<br>
 Same as heat maps, but for specific player. At first this script creates heatmaps for default game world (without changes by player).
 Since all saves in Revenant are built upon creating lots of specific *.dat files, that represent players' actions , it is possible to
 show that difference graphically. Progress heatmap will show you where's the most difference in file sizes. And that difference
