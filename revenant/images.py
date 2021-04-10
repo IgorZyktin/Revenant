@@ -34,6 +34,8 @@
     insert_bmp_into_dat('menus.dat')
 """
 import os.path
+import sys
+
 from PIL import Image
 
 
@@ -52,10 +54,11 @@ def pack_color(rgb_color):
     green = bin(green)[2:].rjust(5, '0')
     blue = bin(blue)[2:].rjust(5, '0')
 
-    encoded_color = green[2:] + blue + '0' + red + green[:2]  # '0' is for alpha-channel
+    encoded_color = green[2:] + blue + '0' + red + green[
+                                                   :2]  # '0' is for alpha-channel
 
     rev_color_a = int(encoded_color[0:8], 2)
-    rev_color_b = int(encoded_color[8:],  2)
+    rev_color_b = int(encoded_color[8:], 2)
 
     return rev_color_a, rev_color_b
 
@@ -99,7 +102,9 @@ def get_known_files():
                 if len(line) > 3:
                     param = line.split()
                     #            filename        start          width         height      postfix
-                    known.append([param[0], int(param[1]), int(param[2]), int(param[3]), param[4]])
+                    known.append(
+                        [param[0], int(param[1]), int(param[2]), int(param[3]),
+                         param[4]])
                 else:
                     continue
     else:
@@ -124,7 +129,8 @@ def dat_to_bmp(filename, postfix='main'):
     known = get_known_files()
 
     if not known:
-        print('Unable start conversion, list of known files is not found.' % filename)
+        print(
+            'Unable start conversion, list of known files is not found.' % filename)
         return False
 
     # Files with [postfix] other than ours might have some additional data inside
@@ -139,7 +145,8 @@ def dat_to_bmp(filename, postfix='main'):
                 sub_files.append(line)
 
     if not current_file:
-        print('Unable to start conversion, file [%s] has unknown structure.' % filename)
+        print(
+            'Unable to start conversion, file [%s] has unknown structure.' % filename)
         return False
 
     start = current_file[1]
@@ -176,12 +183,15 @@ def dat_to_bmp(filename, postfix='main'):
     if os.path.isfile(output_name):
         add = 1
         while os.path.isfile(output_name):
-            output_name = filename[0:-4] + '_' + str(postfix) + '(' + str(add).rjust(2, '0') + ').bmp'
+            output_name = filename[0:-4] + '_' + str(postfix) + '(' + str(
+                add).rjust(2, '0') + ').bmp'
             add += 1
 
     bmp_image.save(output_name)
 
-    print('dat -> bmp conversion is successful. [%s] is converted and saved as [%s]' % (filename, output_name))
+    print(
+        'dat -> bmp conversion is successful. [%s] is converted and saved as [%s]' % (
+            filename, output_name))
 
     # recursive extraction
     if postfix == 'main' and len(sub_files) > 0:
@@ -204,19 +214,24 @@ def insert_bmp_into_dat(dat_name, postfix='main'):
     have_bmp = os.path.isfile(bmp_name)
 
     if not have_bmp and not have_dat:
-        print('Unable to start conversion, both [%s] and [%s] are not found.' % (dat_name, bmp_name))
+        print(
+            'Unable to start conversion, both [%s] and [%s] are not found.' % (
+                dat_name, bmp_name))
         return False
     elif have_bmp and not have_dat:
-        print('Unable to start conversion, target file [%s] is not found.' % dat_name)
+        print(
+            'Unable to start conversion, target file [%s] is not found.' % dat_name)
         return False
     elif not have_bmp and have_dat:
-        print('Unable to start conversion, source file [%s] is not found.' % bmp_name)
+        print(
+            'Unable to start conversion, source file [%s] is not found.' % bmp_name)
         return False
 
     known = get_known_files()
 
     if not known:
-        print('Unable to start conversion, list of known files is not found.' % dat_name)
+        print(
+            'Unable to start conversion, list of known files is not found.' % dat_name)
         return False
 
     # Files with [postfix] other than ours might have some additional data inside
@@ -231,7 +246,8 @@ def insert_bmp_into_dat(dat_name, postfix='main'):
                 sub_files.append(line)
 
     if not current_file:
-        print('Unable to start conversion, file [%s] has unknown structure.' % dat_name)
+        print(
+            'Unable to start conversion, file [%s] has unknown structure.' % dat_name)
         return False
 
     start = current_file[1]
@@ -249,14 +265,15 @@ def insert_bmp_into_dat(dat_name, postfix='main'):
     pixel_space = 0
 
     for i in range(0, len(raw_data), 2):
-        if start <= i < (start + new_pixels * 2):  # one bmp pixel is two bytes in game's pixels
+        if start <= i < (
+                start + new_pixels * 2):  # one bmp pixel is two bytes in game's pixels
             color = pack_color(bmp_data[pixel_space])
             data.append(color[0])
             data.append(color[1])
             pixel_space += 1
         else:
             data.append(raw_data[i])
-            data.append(raw_data[i+1])
+            data.append(raw_data[i + 1])
 
     # file wil be overwritten
     output_name = dat_name
@@ -264,12 +281,14 @@ def insert_bmp_into_dat(dat_name, postfix='main'):
     binary_data = bytearray(data)
     with open(output_name, 'wb') as result_file:
         result_file.write(binary_data)
-        print('bmp -> dat conversion is successful. Data from [%s] is added to [%s]' % (bmp_name, output_name))
+        print(
+            'bmp -> dat conversion is successful. Data from [%s] is added to [%s]' % (
+                bmp_name, output_name))
 
     # recursive inserting
     if postfix == 'main' and len(sub_files) > 0:
         for file in sub_files:
-            insert_bmp_into_dat(file[0], file[4]) # filename.dat + postfix
+            insert_bmp_into_dat(file[0], file[4])  # filename.dat + postfix
     return True
 
 
@@ -331,12 +350,40 @@ def extract_piece_of_dat(filename, position):
     if os.path.isfile(output_name):
         add = 1
         while os.path.isfile(output_name):
-            output_name = 'new_' + filename + '(' + str(add).rjust(2, '0') + ').dat'
+            output_name = 'new_' + filename + '(' + str(add).rjust(2,
+                                                                   '0') + ').dat'
             add += 1
 
     with open(output_name, 'wb') as result_file:
         binary_data = bytearray(data)
         result_file.write(binary_data)
 
-    print('dat -> dat extraction is successful. [%s] is converted and saved as [%s]' % (filename, output_name))
+    print(
+        'dat -> dat extraction is successful. [%s] is converted and saved as [%s]' % (
+            filename, output_name))
     return True
+
+
+if __name__ == '__main__':
+    args = sys.argv[1:]
+
+    if len(args) != 2:
+        print('You need to specify mode and target to run this script')
+        print()
+        print('Possible examples:')
+        print('python images.py extract *')
+        print('python images.py extract somefile.dat')
+        print('python images.py insert somefile.dat')
+        sys.exit()
+
+    mode, target, *_ = args
+    mode = mode.lower()
+
+    if mode == 'extract':
+        dat_to_bmp(target)
+
+    elif mode == 'insert':
+        insert_bmp_into_dat(target)
+
+    else:
+        print(f'Arguments are not recognised: {args}')

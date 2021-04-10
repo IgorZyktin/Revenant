@@ -1,38 +1,17 @@
-# Original code was written by Vinylon
-# http://accursedfarms.com/forums/viewtopic.php?f=63&t=8128
-# some illustrating tweaks by Nicord
-# https://www.moddb.com/mods/the-forsaken
-"""
-    This module is created to work with automap images and map (dat) files.
-    
-    Example 1: save automaps from given directory
+"""Automap processing.
 
-    data = scan_for_files('automaps', 'bmp')
-    print('Found data in "automaps" folder:', data)
-    stitch_automaps(data)
+This module is created to work with automap images and map (dat) files.
 
-    Example 2: save all automaps from all nearby directories
+Original code was written by Vinylon
+http://accursedfarms.com/forums/viewtopic.php?f=63&t=8128
 
-    save_all_automaps()
-
-    Example 3: save heatmaps from given directory
-
-    Unfortunately, original map files were created in proprietary format.
-    Therefore heatmaps are the best we could get out of them.
-
-    data = scan_for_files('map', 'dat')
-    print('Found data in "map" folder:', data)
-    stitch_heatmaps(data)
-
-    Example 4: save all heatmaps from all nearby directories
-
-    save_all_heatmaps()
-
-    Example 5: write player's progress over default game map.
-
-    show_progress_on_map()
+Some illustrating tweaks by Nicord
+https://www.moddb.com/mods/the-forsaken
 """
 import os.path
+import sys
+from typing import Callable
+
 from PIL import Image
 
 
@@ -55,18 +34,19 @@ def scan_for_files(directory, extension):
 
     if os.path.isdir(directory):
         files = os.listdir(directory)
+
     else:
-        print('No directory named "%s" has been found!' % directory)
+        print(f'No directory named "{directory}" has been found!')
         return False
 
-    print('Scanning "%s" for files like "name_x_y.%s"' % (directory[:-1], extension), end='')
+    print(f'Scanning "{directory}" for files like "name_x_y.{extension}"')
 
     names = []
     raw_data = []
     ignored = 0
 
     for file in files:
-        if file[-3:].lover() != extension.lower():
+        if file[-3:].lower() != extension.lower():
             # wrong extension
             ignored += 1
             continue
@@ -115,7 +95,9 @@ def scan_for_files(directory, extension):
                 names.append(int(name_x_y[0]))
                 # Files are named by pattern name_x_y.type
                 file_size = os.path.getsize(directory + file)
-                raw_data.append([int(name_x_y[0]), int(name_x_y[1]), int(name_x_y[2]), file_size])
+                raw_data.append(
+                    [int(name_x_y[0]), int(name_x_y[1]), int(name_x_y[2]),
+                     file_size])
             else:
                 ignored += 1
                 continue
@@ -186,7 +168,8 @@ def stitch_automaps(data, dest_dir='RevAPI_automaps'):
         map_width = abs(min_x - max_x) + 1
         map_height = abs(min_y - max_y) + 1
 
-        map_image = Image.new('RGB', (tile_size * map_width, tile_size * map_height))
+        map_image = Image.new('RGB',
+                              (tile_size * map_width, tile_size * map_height))
 
         for curr_y in range(min_y, max_y + 1):
             for curr_x in range(min_x, max_x + 1):
@@ -203,7 +186,8 @@ def stitch_automaps(data, dest_dir='RevAPI_automaps'):
         if not os.path.isdir(dest_dir):
             os.mkdir(dest_dir)
 
-        new_file = dest_dir + '/' + filename + '_' + str(key).rjust(2, '0') + '.bmp'
+        new_file = dest_dir + '/' + filename + '_' + str(key).rjust(2,
+                                                                    '0') + '.bmp'
 
         if has_maps:
             if os.path.isfile(new_file):
@@ -212,7 +196,8 @@ def stitch_automaps(data, dest_dir='RevAPI_automaps'):
                 add = 1
                 while os.path.isfile(new_file):
                     new_file = dest_dir + '/' + filename + '_' + \
-                               str(key).rjust(2, '0') + '(' + str(add) + ').bmp'
+                               str(key).rjust(2, '0') + '(' + str(
+                        add) + ').bmp'
                     add += 1
 
             num = str(key).rjust(2)
@@ -269,7 +254,9 @@ def stitch_heatmaps(data, dest_dir='RevAPI_heatmaps'):
         map_width = abs(min_x - max_x) + 1
         map_height = abs(min_y - max_y) + 1
 
-        map_image = Image.new('RGB', (tile_size * map_width, tile_size * map_height), (32, 32, 32))
+        map_image = Image.new('RGB',
+                              (tile_size * map_width, tile_size * map_height),
+                              (32, 32, 32))
 
         for curr_y in range(min_y, max_y + 1):
             for curr_x in range(min_x, max_x + 1):
@@ -287,7 +274,8 @@ def stitch_heatmaps(data, dest_dir='RevAPI_heatmaps'):
                     if color < 16:
                         color = 16
 
-                    tile_image = Image.new('RGB', (tile_size, tile_size), (color, 0, color))  # violet shades
+                    tile_image = Image.new('RGB', (tile_size, tile_size),
+                                           (color, 0, color))  # violet shades
 
                     paste_x = tile_size * (curr_x - min_x)
                     paste_y = tile_size * (curr_y - min_y)
@@ -296,13 +284,15 @@ def stitch_heatmaps(data, dest_dir='RevAPI_heatmaps'):
         if not os.path.isdir(dest_dir):
             os.mkdir(dest_dir)
 
-        new_file = dest_dir + '/' + filename + '_' + str(key).rjust(2, '0') + '.bmp'
+        new_file = dest_dir + '/' + filename + '_' + str(key).rjust(2,
+                                                                    '0') + '.bmp'
 
         if has_maps:
             if os.path.isfile(new_file):
                 add = 1
                 while os.path.isfile(new_file):
-                    new_file = dest_dir + '/' + filename + '_' + str(key).rjust(2, '0') + '(' + str(add) + ').bmp'
+                    new_file = dest_dir + '/' + filename + '_' + str(
+                        key).rjust(2, '0') + '(' + str(add) + ').bmp'
                     add += 1
 
             num = str(key).rjust(2)
@@ -314,8 +304,9 @@ def stitch_heatmaps(data, dest_dir='RevAPI_heatmaps'):
 
             map_image.save(new_file, 'BMP')
 
-            print('\t\tHeatmap [%s] is done, resolution [%s x %s], [%s] tiles, saved as %s (%s files left)' %
-                  (num, width, height, tile, file, left))
+            print(
+                '\t\tHeatmap [%s] is done, resolution [%s x %s], [%s] tiles, saved as %s (%s files left)' %
+                (num, width, height, tile, file, left))
 
             iteration += 1
 
@@ -356,12 +347,14 @@ def stitch_progress(source_data, progress_data, dest_dir='RevAPI_progress'):
 
         filename = directory[:-1]
 
-        source_file = dest_dir + '/' + source_data[key][5][:-1] + '_' + str(key).rjust(2, '0') + '.bmp'
+        source_file = dest_dir + '/' + source_data[key][5][:-1] + '_' + str(
+            key).rjust(2, '0') + '.bmp'
 
         if os.path.isfile(source_file):
             map_image = Image.open(source_file)
         else:
-            map_image = Image.new('RGB', (tile_size * map_width, tile_size * map_height), (32, 32, 32))
+            map_image = Image.new('RGB', (
+                tile_size * map_width, tile_size * map_height), (32, 32, 32))
 
         for curr_y in range(min_y, max_y + 1):
             for curr_x in range(min_x, max_x + 1):
@@ -379,7 +372,8 @@ def stitch_progress(source_data, progress_data, dest_dir='RevAPI_progress'):
                     if color < 16:
                         color = 16
 
-                    tile_image = Image.new('RGB', (tile_size, tile_size), (0, color, 0))  # green shades
+                    tile_image = Image.new('RGB', (tile_size, tile_size),
+                                           (0, color, 0))  # green shades
 
                     paste_x = tile_size * (curr_x - min_x)
                     paste_y = tile_size * (curr_y - min_y)
@@ -388,14 +382,16 @@ def stitch_progress(source_data, progress_data, dest_dir='RevAPI_progress'):
         if not os.path.isdir(dest_dir):
             os.mkdir(dest_dir)
 
-        new_file = source_file[:-4] + '_' + filename + '_' + str(key).rjust(2, '0') + '.bmp'
+        new_file = source_file[:-4] + '_' + filename + '_' + str(key).rjust(2,
+                                                                            '0') + '.bmp'
 
         if has_maps:
             if os.path.isfile(new_file):
                 add = 1
                 while os.path.isfile(new_file):
                     new_file = source_file[:-4] + '_' + filename + '_' + \
-                               str(key).rjust(2, '0') + '(' + str(add) + ').bmp'
+                               str(key).rjust(2, '0') + '(' + str(
+                        add) + ').bmp'
                     add += 1
 
             num = str(key).rjust(2)
@@ -407,49 +403,63 @@ def stitch_progress(source_data, progress_data, dest_dir='RevAPI_progress'):
 
             map_image.save(new_file, 'BMP')
 
-            print('\t\tProgress heatmap [%s] is done, resolution [%s x %s], [%s] tiles, saved as %s (%s files left)' %
-                  (num, width, height, tile, file, left))
+            print(
+                '\t\tProgress heatmap [%s] is done, resolution [%s x %s], [%s] tiles, saved as %s (%s files left)' %
+                (num, width, height, tile, file, left))
 
             iteration += 1
 
     return True
 
 
-def save_all_automaps():
+def save_all_automaps(path: str = '', extension: str = 'bmp') -> None:
+    """Save all automaps including nested directories.
+
+    If finds files that fit into template name_x_y.bmp,
+    applies automaps stitching function to them.
     """
-    Scans every directory in the same folder as the script.
-    If finds files that fit into template name_x_y.bmp - applies automaps stitching function to them.
+    save_all(
+        path=path,
+        extension=extension,
+        on_success='Conversion complete. {i} files converted as automaps',
+        on_fail='No automap files found in nearby directories',
+        handler=stitch_automaps,
+    )
+
+
+def save_all_heatmaps(path: str = '', extension: str = 'dat'):
+    """Save all heatmaps including nested directories.
+
+    If finds files that fit into template name_x_y.dat,
+    applies heatmaps stitching function to them.
     """
+    save_all(
+        path=path,
+        extension=extension,
+        on_success='Conversion complete. {i} files converted as heatmaps',
+        on_fail=('No suitable to heatmap creation '
+                 'files are found in nearby directories'),
+        handler=stitch_heatmaps,
+    )
+
+
+def save_all(path: str, extension: str, on_success: str,
+             on_fail: str, handler: Callable) -> None:
+    """Generic function for automap/heatmap stitching."""
+    path = path or os.curdir
 
     i = 0
-    for folder in os.listdir(os.curdir):
+    for folder in os.listdir(path):
         if os.path.isdir(folder):
-            data = scan_for_files(folder, 'bmp')
+            data = scan_for_files(folder, extension)
             if data:
-                stitch_automaps(data)
+                handler(data)
                 i += 1
-    if i > 0:
-        print('Conversion complete. %d files converted as automaps.' % i)
-    else:
-        print('No automap files found in nearby directories.')
 
-
-def save_all_heatmaps():
-    """
-    Scans every directory in the same folder as the script.
-    If finds files that fit into template name_x_y.dat - applies heatmaps stitching function to them.
-    """
-    i = 0
-    for folder in os.listdir(os.curdir):
-        if os.path.isdir(folder):
-            data = scan_for_files(folder, 'dat')
-            if data:
-                stitch_heatmaps(data)
-                i += 1
-    if i > 0:
-        print('Conversion complete. %d files converted as heatmaps.' % i)
+    if i:
+        print(on_success.format(i))
     else:
-        print('No suitable to heatmap creation files are found in nearby directories.')
+        print(on_fail)
 
 
 def show_progress_on_map(source='map', progress='savegame'):
@@ -469,16 +479,63 @@ def show_progress_on_map(source='map', progress='savegame'):
 
     if progress_data and source_data:
 
-        source_stitched = stitch_heatmaps(source_data, 'RevAPI_progress')
-        progress_stitched = stitch_progress(source_data, progress_data, 'RevAPI_progress')
+        source_stitched = stitch_heatmaps(source_data,
+                                          'RevAPI_progress')
+
+        progress_stitched = stitch_progress(source_data,
+                                            progress_data,
+                                            'RevAPI_progress')
 
         return source_stitched and progress_stitched
     else:
         if (not progress_data) and source_data:
-            print('Not enough information to show progress. Progress directory is empty.')
+            print('Not enough information to show progress. '
+                  'Progress directory is empty.')
+
         elif progress_data and (not source_data):
-            print('Not enough information to show progress. Source directory is empty.')
+            print('Not enough information to show progress. '
+                  'Source directory is empty.')
+
         else:
             print('Not enough information to show progress. No input data.')
 
     return False
+
+
+if __name__ == '__main__':
+    args = sys.argv[1:]
+
+    if len(args) < 2 or len(args) > 3:
+        print('You need to specify mode to run this script')
+        print()
+        print('Possible examples:')
+        print('python automaps.py automaps *')
+        print('python automaps.py automaps my_dir')
+        print('python automaps.py heatmaps *')
+        print('python automaps.py heatmaps my_dir')
+        print('python automaps.py progress src1_dir src2_dir')
+        sys.exit()
+
+    mode, directory, *rest = args
+
+    mode = mode.lower().strip()
+    directory = directory.strip()
+
+    if mode == 'heatmaps':
+        if directory == '*':
+            save_all_heatmaps()
+        else:
+            save_all_heatmaps(directory)
+
+    elif mode == 'automaps':
+        if directory == '*':
+            save_all_automaps()
+        else:
+            save_all_automaps(directory)
+
+    elif mode == 'progress':
+        source, target, *_ = rest
+        show_progress_on_map(source, target)
+
+    else:
+        print(f'Arguments are not recognised: {args}')
