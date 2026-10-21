@@ -1,0 +1,425 @@
+// Revenant - Copyright 1999 Cinematix Studios, Inc.
+// ********** Revenant WEAPON.DEF File  ************ 
+
+WEAPON "Short Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 13, 0, 0, 195, 0, 16
+	DESCRIPTION SSWRD
+END
+
+WEAPON "Training Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 2, 0, 0, 30, 0, 16
+	DESCRIPTION TRNSWD
+END
+
+WEAPON "Club"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 14, 0, 0, 210, 0, 16
+	DESCRIPTION WCLUB
+END
+
+WEAPON "Bone Pickaxe"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 15, 0, 0, 225, 0, 16
+	DESCRIPTION BPAXE
+END
+
+WEAPON "Stone Axe"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 17, 0, 0, 255, 0, 16
+	DESCRIPTION SAXE
+END
+
+WEAPON "Ball Racker"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 18, 0, 0, 270, 0, 16
+	DESCRIPTION BRACKR
+END
+
+WEAPON "Studded Bat"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 19, 0, 0, 570, 0, 17
+	DESCRIPTION STBAT
+END
+
+WEAPON "Spiked Bat"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 21, 0, 0, 630, 0, 17
+	DESCRIPTION SPBAT
+END
+
+WEAPON "Bone Sickle"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 22, 0, 0, 660, 0, 17
+	DESCRIPTION BSICKLE
+END
+
+WEAPON "Maul"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 25, 0, 0, 1500, 0, 18
+	DESCRIPTION MAUL
+END
+
+WEAPON "Morning Star"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 30, 0, 0, 1800, 0, 18
+	DESCRIPTION MSTAR
+END
+
+WEAPON "Sickle"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 30, 0, 0, 1800, 0, 18
+	DESCRIPTION SICKLE
+END
+
+WEAPON "Tulwar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 35, 0, 0, 2100, 0, 18
+	DESCRIPTION PMAUL
+END
+
+WEAPON "Battle Axe"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 39, 0, 0, 2340, 0, 18
+	DESCRIPTION BTAXE
+END
+
+WEAPON "Flanged Mace"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 40, 0, 0, 2400, 0, 18
+	DESCRIPTION FLMACE
+END
+
+WEAPON "Pointed Maul"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 42, 0, 0, 2520, 0, 18
+	DESCRIPTION TULWAR
+END
+
+WEAPON "Golden Tulwar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 43, 0, 0, 2580, 0, 18
+	DESCRIPTION GTULWAR
+END
+
+WEAPON "Soul Cleaver"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 45, 0, 0, 4050, 0, 19
+	DESCRIPTION SCLEAVR
+END
+
+WEAPON "Blackened Axe"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 47, 0, 0, 4230, 0, 19
+	DESCRIPTION BLAXE
+END
+
+WEAPON "Long Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 55, 0, 0, 4950, 0, 19
+	DESCRIPTION LSWORD
+END
+
+WEAPON "Broadsword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 60, 0, 0, 5400, 0, 19
+	DESCRIPTION BRSWRD
+END
+
+WEAPON "Ranger Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 65, 0, 0, 9750, 0, 20
+	DESCRIPTION RNGSWRD
+END
+
+WEAPON "Bastard Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 70, 0, 0, 10500, 0, 20
+	DESCRIPTION BSSWRD
+END
+
+WEAPON "Claymore"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 73, 0, 0, 10950, 0, 20
+	DESCRIPTION CLAYMR
+END
+
+WEAPON "Valkyrie Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 75, 0, 0, 11250, 0, 20
+	DESCRIPTION VALSWRD
+END
+
+WEAPON "Blackened Morningstar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 80, 0, 0, 12000, 0, 20
+	DESCRIPTION BLMRNST
+END
+
+WEAPON "Katana"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 85, 0, 0, 19550, 0, 21
+	DESCRIPTION KATANA
+END
+
+WEAPON "Flamberge"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 90, 0, 0, 20700, 0, 21
+	DESCRIPTION FLMBRG
+END
+
+WEAPON "Golden Flamberge"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 95, 0, 0, 21850, 0, 21
+	DESCRIPTION GFLMBRG
+END
+
+WEAPON "Golden Morningstar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 100, 0, 0, 23000, 0, 21
+	DESCRIPTION GMRNSTR
+END
+
+WEAPON "Ninja To"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 105, 0, 0, 31500, 0, 22
+	DESCRIPTION NNJATO
+END
+
+WEAPON "Magic Sceptre"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 110, 0, 0, 33000, 0, 22
+	DESCRIPTION MGCSCPT
+END
+
+WEAPON "Charred Claymore"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 115, 0, 0, 34500, 0, 22
+	DESCRIPTION CHCLYMR
+END
+
+WEAPON "Spiked Maul"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 120, 0, 0, 36000, 0, 22
+	DESCRIPTION SPMAUL
+END
+
+WEAPON "Berserker Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 125, 0, 0, 56250, 0, 23
+	DESCRIPTION BRSKSWD
+END
+
+WEAPON "Shining Razor Mace"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 130, 0, 0, 58500, 0, 23
+	DESCRIPTION SNRZRMC
+END
+
+WEAPON "Dwarven Axe"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 4, 135, 0, 0, 60750, 0, 23
+	DESCRIPTION DWRVAXE
+END
+
+WEAPON "Barbarian Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 140, 0, 0, 63000, 0, 24
+	DESCRIPTION BRBNSWD
+END
+
+WEAPON "Wyrmm's Tooth Sword"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 150, 0, 0, 67500, 0, 25
+	DESCRIPTION WRMTOOT
+END
+
+WEAPON "Angsaar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 2, 200, 0, 0, 90000, 0, 23
+	DESCRIPTION DWRVAXE
+END
+
+//STAFFS
+
+WEAPON "Oak Branch"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 10, 0, 0, 195, 0, 12
+	DESCRIPTION STAFF
+END
+
+WEAPON "Wooden Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 13, 0, 0, 210, 0, 12
+	DESCRIPTION STAFF
+END
+
+WEAPON "Bamboo Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 14, 0, 0, 225, 0, 13
+	DESCRIPTION STAFF
+END
+
+WEAPON "Bo"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 16, 0, 0, 255, 0, 13
+	DESCRIPTION STAFF
+END
+
+WEAPON "Iron Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 17, 0, 0, 270, 0, 14
+	DESCRIPTION STAFF
+END
+
+WEAPON "Ringed Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+        BASICMODS       4, 3, 19, 0, 0, 570, 0, 14
+	DESCRIPTION STAFF
+END
+
+WEAPON "Iron Bo"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+        BASICMODS       4, 3, 23, 0, 0, 630, 0, 15
+	DESCRIPTION STAFF
+END
+
+WEAPON "Festus Jeweled Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+        BASICMODS       4, 3, 26, 0, 0, 1800, 0, 16
+	DESCRIPTION STAFF
+END
+
+WEAPON "Kindjal"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 29, 0, 0, 2000, 0, 17
+	DESCRIPTION STAFF
+END
+
+WEAPON "Kubatar"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 32, 0, 0, 2200, 0, 17
+	DESCRIPTION STAFF
+END
+
+WEAPON "Obsidian Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 39, 0, 0, 2400, 0, 17
+	DESCRIPTION STAFF
+END
+
+WEAPON "Khyber Blade"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 40, 0, 0, 2500, 0, 18
+	DESCRIPTION STAFF
+END
+
+WEAPON "Issathi Bone Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 42, 0, 0, 2750, 0, 18
+	DESCRIPTION STAFF
+END
+
+WEAPON "Heavy Iron Bo"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 43, 0, 0, 3400, 0, 18
+	DESCRIPTION STAFF
+END
+
+WEAPON "Nikachi"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 45, 0, 0, 4050, 0, 19
+	DESCRIPTION STAFF
+END
+
+WEAPON "Dragon Scale Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 47, 0, 0, 4230, 0, 19
+	DESCRIPTION STAFF
+END
+
+WEAPON "Tapered Crystal Staff"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 55, 0, 0, 4950, 0, 19
+	DESCRIPTION STAFF
+END
+
+WEAPON "Vreelander"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 60, 0, 0, 5400, 0, 20
+	DESCRIPTION STAFF
+END
+
+WEAPON "Flanged Morning Star"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 65, 0, 0, 9750, 0, 20
+	DESCRIPTION STAFF
+END
+
+WEAPON "Ancient Halberd"
+BEGIN
+	// BASICMODS	eqslot, type, damage, combining, poison, value, damagemod, minstrength
+	BASICMODS	4, 3, 70, 0, 0, 10500, 0, 21
+	DESCRIPTION STAFF
+END
+

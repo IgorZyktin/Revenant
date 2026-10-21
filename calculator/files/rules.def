@@ -1,0 +1,377 @@
+// Revenant - Copyright 1999 Cinematix Studios, Inc.
+// ********** Revenant RULES.DEF File  ************ 
+
+// Weapon mask defines (Note: make sure these don't match Windows WM_ messages)
+#define WM_HAND		0x0001
+#define WM_KNIFE	0x0002
+#define WM_SWORD	0x0004
+#define WM_BLUDGEON	0x0008
+#define WM_AXE		0x0010
+#define WM_STAFF	0x0020
+#define WM_BOW		0x0040
+#define WM_CROSSBOW	0x0080
+
+// Define for most two handed weapons
+#define WM_TWOHAND		0x001e
+#define WM_ANY			0xFFFF
+
+// ********************************************************************
+// *                                                                  *
+// *                  G  A  M  E     S  T  A  T  S                    *
+// *                                                                  *
+// ********************************************************************
+
+DAYLENGTH 80000			// Day length is two REAL minutes
+TWILIGHT 60, 8			// 30 GAME minutes for twilight, 15 light change steps
+STEALTH 100, 50, 10		// 100 max stealth, 50 when sneaking, 10 is minimum
+HEALTHDATA 25, 1, 6000	// 25 per level (before stat/class mods), recov 1% per 1 minutes
+FATIGUEDATA 3, 10, 75	// 25 per level (before stat/class mods), recov 1% per 1 second
+MANADATA 25, 1, 6000	// 25 per level (before stat/class mods), recov 1% per 1 minutes
+//AMMODATA 20, 6, 3, 2, 25 // Base value 20, 6 per level for monsters, 4 per character level, 1 per skill level, 25% min dmg per hit
+POISONDATA 6, 100		// damage 1 per 1/2 second
+TOHITCENTER 50			// The percentage of hitting the enemy
+TOHITRANGECHAR 12		// The increase of to hit per level (tohit = (level * TOHITRANGE) + ....)
+TOHITRANGEPLYR 10		// The increase of to hit per level (tohit = (level * TOHITRANGE) + ....)
+TOHITBLOCK 25			// The modifier for tohit change based on blocking
+TOHITFACE 25			// The modifier for tohit change based on if the isn't facing us
+
+// Damage Calculation (Part 1)
+// 
+// CalculatedDamage = ( (weapondamage * (100 + AttackDamageModifier - DamageResistance) ) / 100) - ArmorProtection
+//
+// BaseDamage = (CalculatedDamage * (100 + StrengthModifier + DamageModifier) ) / 100
+
+// ToHit (Player)
+//
+// Off = AttackMod + AgilityModifier + MagicModifier + WeaponSkill + (Level * TohitRangePlyr) + LuckModifier
+//
+// Def = DefenseMod + ReflexesModifier + MagicModifier + (Level * TohitRangePlyr) + LuckModifier
+
+// ToHit (Character)
+//
+// Off = AttackMod + MagicModifier + (Level * TohitRangeChar)
+//
+// Def = DefenseMod + MagicModifier + (Level * TohitRangeChar)
+
+// ToHit (Final)
+//
+// tohit = ( (ToHitCenter - Def) + Off) + FacingBonus) - BlockBonus
+
+// Damage Calculation (Part 2)
+//
+// FinalDamage = (BaseDamage * (100 + ToHitDamage) ) / 100
+
+
+
+TOHITDAMAGE
+BEGIN
+	// MinValue DamagePercent
+	ENTRY	40	50
+	ENTRY	0	0
+	ENTRY	-15	-50
+	ENTRY	-40	-75
+	ENTRY	-50	-90
+END
+
+
+STATLEVEL "Strength"
+BEGIN
+	// Level Damage%
+	ENTRY	0	-30
+	ENTRY	1	-25
+	ENTRY	2	-20
+	ENTRY	3	-20
+	ENTRY	4	-15
+	ENTRY	5	-15
+	ENTRY	6	-10
+	ENTRY	7	-10
+	ENTRY	8	-10
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	-5
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	5
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	10
+	ENTRY	20	10
+	ENTRY	21	10
+	ENTRY	22	15
+	ENTRY	23	15
+	ENTRY	24	15
+	ENTRY	25	20
+	ENTRY	26	20
+	ENTRY	27	20
+	ENTRY	28	25
+	ENTRY	29	25
+	ENTRY	30	30
+END
+
+STATLEVEL "Constitution"
+BEGIN
+	// Level Health%
+	ENTRY	0	-30
+	ENTRY	1	-25
+	ENTRY	2	-20
+	ENTRY	3	-20
+	ENTRY	4	-15
+	ENTRY	5	-15
+	ENTRY	6	-10
+	ENTRY	7	-10
+	ENTRY	8	-10
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	-5
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	5
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	10
+	ENTRY	20	10
+	ENTRY	21	10
+	ENTRY	22	15
+	ENTRY	23	15
+	ENTRY	24	15
+	ENTRY	25	20
+	ENTRY	26	20
+	ENTRY	27	20
+	ENTRY	28	25
+	ENTRY	29	25
+	ENTRY	30	30
+END
+
+
+STATLEVEL "Agility"
+BEGIN
+	// Level ToHitOffense
+	ENTRY	0	-30
+	ENTRY	1	-25
+	ENTRY	2	-20
+	ENTRY	3	-20
+	ENTRY	4	-15
+	ENTRY	5	-15
+	ENTRY	6	-10
+	ENTRY	7	-10
+	ENTRY	8	-10
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	-5
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	5
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	10
+	ENTRY	20	10
+	ENTRY	21	10
+	ENTRY	22	15
+	ENTRY	23	15
+	ENTRY	24	15
+	ENTRY	25	20
+	ENTRY	26	20
+	ENTRY	27	20
+	ENTRY	28	25
+	ENTRY	29	25
+	ENTRY	30	30
+END
+
+
+STATLEVEL "Reflexes"
+BEGIN
+	// Level DefenseToHit
+	ENTRY	0	-30
+	ENTRY	1	-25
+	ENTRY	2	-20
+	ENTRY	3	-20
+	ENTRY	4	-15
+	ENTRY	5	-15
+	ENTRY	6	-10
+	ENTRY	7	-10
+	ENTRY	8	-10
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	-5
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	5
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	10
+	ENTRY	20	10
+	ENTRY	21	10
+	ENTRY	22	15
+	ENTRY	23	15
+	ENTRY	24	15
+	ENTRY	25	20
+	ENTRY	26	20
+	ENTRY	27	20
+	ENTRY	28	25
+	ENTRY	29	25
+	ENTRY	30	30
+END
+
+
+STATLEVEL "Luck"
+BEGIN
+	// Level DieRollModifier
+	ENTRY	0	-15
+	ENTRY	1	-10
+	ENTRY	2	-10
+	ENTRY	3	-10
+	ENTRY	4	-10
+	ENTRY	5	-10
+	ENTRY	6	-5
+	ENTRY	7	-5
+	ENTRY	8	-5
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	0
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	0
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	5
+	ENTRY	20	5
+	ENTRY	21	5
+	ENTRY	22	5
+	ENTRY	23	10
+	ENTRY	24	10
+	ENTRY	25	10
+	ENTRY	26	10
+	ENTRY	27	10
+	ENTRY	28	10
+	ENTRY	29	15
+	ENTRY	30	15
+END
+
+STATLEVEL "Mind"
+BEGIN
+	// Level ManaBonus%
+	ENTRY	0	-30
+	ENTRY	1	-25
+	ENTRY	2	-20
+	ENTRY	3	-20
+	ENTRY	4	-15
+	ENTRY	5	-15
+	ENTRY	6	-10
+	ENTRY	7	-10
+	ENTRY	8	-10
+	ENTRY	9	-5
+	ENTRY	10	-5
+	ENTRY	11	-5
+	ENTRY	12	0
+	ENTRY	13	0
+	ENTRY	14	0
+	ENTRY	15	0
+	ENTRY	16	5
+	ENTRY	17	5
+	ENTRY	18	5
+	ENTRY	19	10
+	ENTRY	20	10
+	ENTRY	21	10
+	ENTRY	22	15
+	ENTRY	23	15
+	ENTRY	24	15
+	ENTRY	25	20
+	ENTRY	26	20
+	ENTRY	27	20
+	ENTRY	28	25
+	ENTRY	29	25
+	ENTRY	30	30
+END
+
+// ********************************************************************
+// *                                                                  *
+// *                C H A R A C T E R    C L A S S E S                *
+// *                                                                  *
+// ********************************************************************
+
+CLASS "Revenant"
+BEGIN
+
+// Revenants have a small bonus in mana due to their magical nature
+	FATIGUEMOD 0		// Revenants have no fatigue modifiers
+	HEALTHMOD 0			// Revenants have no health modifiers
+	MANAMOD 5			// Revenants have a +5% mana modifier
+
+// Revenants have above average strength and above average mind but below average
+// constitution as they are actually living undead beings.
+//	STATREQS str,con,agl,rflx,luck,mind
+        STATREQS 18, -12, 0, 0, 14, 0
+
+// Revenants have a small invoke bonus, and a bonus for swords, Need to figure this out eventually
+//	SKILLMODS attack,defense,invoke,hands,knife,swords,bludgeons,axes,bows,stealth,lockpick
+	SKILLMODS 5,5,5,0,0,5,0,0,0,0,0
+
+END
+
+CLASS "Veteran"
+BEGIN
+
+// Veterans have a moderate fatigue and health bonus, but weak mana
+	FATIGUEMOD 10
+	HEALTHMOD 40
+	MANAMOD -40
+
+// Veterans have above average strength and constitution, due to their direct style
+// of fighting, but they have below average mind
+//	STATREQS str,con,agl,rflx,luck,mind
+        STATREQS 20, 20, 0, 0, 0, -12
+
+// Veterans have a Need to figure this out eventually
+//	SKILLMODS attack,defense,invoke,hands,knife,swords,bludgeons,axes,bows,stealth,lockpick
+	SKILLMODS 10,10,0,0,0,0,10,0,0,0,0
+
+END
+
+CLASS "Shaman"
+BEGIN
+
+// Shamans are smaller and less hardy, but they have greater magical abilities
+	FATIGUEMOD -20		// Revenants have no fatigue modifiers
+	HEALTHMOD -20		// Revenants have no health modifiers
+	MANAMOD 50			// Revenants have a +50% mana modifier
+
+// Shamans have above average mind and luck, but below average strength
+//	STATREQS str,con,agl,rflx,luck,mind
+        STATREQS -12, 0, 0, 0, 16, 20
+
+// Shamans have a dramatic invoke skill bonus, but also a small attack and defense penalty
+//	SKILLMODS attack,defense,invoke,hands,knife,sword,bludgeons,axes,bows,stealth,lockpick
+	SKILLMODS -5,-5,20,0,0,0,5,0,0,0,0
+
+// Shaman can only wield staffs 
+	WEAPONS WM_BLUDGEON | WM_BOW | WM_CROSSBOW
+
+END
+
+CLASS "Assassin"
+BEGIN
+
+// Assasins have a moderate fatigue bonus
+	FATIGUEMOD 40
+	HEALTHMOD -10
+	MANAMOD -20
+
+// Assasins have above average agility and reflex, but below average strength
+//	STATREQS str,con,agl,rflx,luck,mind
+        STATREQS -12, 0, 20, 18, 0, 0
+
+// Assasins have a dramatic stealth bonus, and a bonus for knives, bows, and lockpicks
+//	SKILLMODS attack,defense,invoke,hands,knife,swords,bludgeons,axes,bows,stealth,lockpick
+	SKILLMODS 0,0,0,0,10,0,0,0,10,10,10
+
+END

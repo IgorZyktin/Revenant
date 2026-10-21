@@ -1,0 +1,1631 @@
+// Revenant - Copyright 1999 Cinematix Studios, Inc.
+// ********** Revenant ARMOR.DEF File  ************ 
+
+//ARMOR SETS
+
+//CLOTH ARMOR
+
+ARMOR "RED CLOTH SHIRT"
+BEGIN  
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION RDCLCP
+END
+
+ARMOR "RED CLOTH PANTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION RDCLLP
+END
+
+ARMOR "RED CLOTH BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 0, 0, 0, 0, 10, 14, 10
+     DESCRIPTION RDCLBT
+END
+
+ARMOR "BLUE CLOTH SHIRT"
+BEGIN  
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BLCLCP
+END
+
+ARMOR "BLUE CLOTH PANTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BLCLLP
+END
+
+ARMOR "BLUE CLOTH BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 0, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BLCLBT
+END
+
+ARMOR "BLACK CLOTH SHIRT"
+BEGIN  
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BCLCP
+END
+
+ARMOR "BLACK CLOTH PANTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BCLLP
+END
+
+ARMOR "BLACK CLOTH BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 0, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BCCLBT
+END
+
+ARMOR "BROWN CLOTH SHIRT"
+BEGIN  
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BRCLCP
+END
+
+ARMOR "BROWN CLOTH PANTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 1, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BRCLLP
+END
+
+ARMOR "BROWN CLOTH BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 0, 0, 0, 0, 10, 14, 10
+     DESCRIPTION BRCLBT
+END
+
+//LEATHER ARMOR 
+
+ARMOR "RED LEATHER CHEST PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION RDLCP
+END
+
+ARMOR "RED LEATHER LEG PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION RDLLP
+END
+
+ARMOR "RED LEATHER HELMET"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 0, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION RDLHL
+END
+
+ARMOR "RED LEATHER GLOVES"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION RDLGT
+END
+
+ARMOR "RED LEATHER BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION RDLBT
+END
+
+ARMOR "BROWN LEATHER CHEST PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION BRLCP
+END
+
+ARMOR "BROWN LEATHER LEG PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION BRLLP
+END
+
+ARMOR "BROWN LEATHER HELMET"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 0, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BRLHL
+END
+
+ARMOR "BROWN LEATHER GLOVES"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BRLGT
+END
+
+ARMOR "BROWN LEATHER BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BRLBT
+END
+
+ARMOR "BLACK LEATHER CHEST PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION BLCP
+END
+
+ARMOR "BLACK LEATHER LEG PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 2, 0, 0, 0, 500, 15, 12
+     DESCRIPTION BLLP
+END
+
+ARMOR "BLACK LEATHER HELMET"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 0, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BLLHL
+END
+
+ARMOR "BLACK LEATHER GLOVES"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BLGT
+END
+
+ARMOR "BLACK LEATHER BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 1, 0, 0, 0, 250, 15, 12
+     DESCRIPTION BLBT
+END
+
+ARMOR "BONE CHEST PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 2, 5, 0, 0, 0, 2500, 19, 18
+     DESCRIPTION BCHP
+END
+
+ARMOR "BONE LEG PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 9, 3, 0, 0, 0, 1500, 19, 18
+     DESCRIPTION BLGP
+END
+
+ARMOR "BONE BOOTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 10, 2, 0, 0, 0, 1000, 19, 18
+     DESCRIPTION BBTS
+END
+
+//ANIMAL FURS
+
+ARMOR "ANIMAL FUR CHEST PLATE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+	BASICMODS 2, 3, 0, 0, 0, 2250, 16, 14
+	DESCRIPTION AFURCP
+    STATLINE DmgResPoison 6
+END
+
+ARMOR "ANIMAL FUR LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 3, 0, 0, 0, 2250, 16, 14
+      DESCRIPTION AFURLP
+      STATLINE DmgResPoison 6
+END
+
+ARMOR "ANIMAL FUR GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 1, 0, 0, 0, 750, 16, 14
+      DESCRIPTION AFURGT
+      STATLINE DmgResPoison 6
+END
+ 
+ARMOR "ANIMAL FUR HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 2, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION AFURHL
+      STATLINE DmgResPoison 6
+END
+
+ARMOR "ANIMAL FUR BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 1, 0, 0, 0, 750, 16, 14
+      DESCRIPTION AFURBT
+      STATLINE DmgResPoison 6
+END
+
+
+//STUDDED ARMOR
+
+ARMOR "GOLD STUDDED CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION GSTLCP
+END
+
+ARMOR "GOLD STUDDED LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION GSTLLP
+END
+
+ARMOR "GOLD STUDDED GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION GSLGT
+END
+
+ARMOR "GOLD STUDDED HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 2, 0, 0, 0, 1000, 16, 14
+      DESCRIPTION GSLH
+END
+
+ARMOR "GOLD STUDDED BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION GSLBT
+END
+
+ARMOR "BLACK STUDDED CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION BSTLCP
+END
+
+ARMOR "BLACK STUDDED LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION BSTLLP
+END
+
+ARMOR "BLACK STUDDED GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION BSLGT
+END
+
+ARMOR "BLACK STUDDED HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 2, 0, 0, 0, 1000, 16, 14
+      DESCRIPTION BSTLH
+END
+
+ARMOR "BLACK STUDDED BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION BSTLBT
+END
+
+ARMOR "SILVER STUDDED CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION SSTLCP
+END
+
+ARMOR "SILVER STUDDED LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 3, 0, 0, 0, 1500, 16, 14
+      DESCRIPTION STLLP
+END
+
+ARMOR "SILVER STUDDED GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION SSTLGT
+END
+
+ARMOR "SILVER STUDDED HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 2, 0, 0, 0, 1000, 16, 14
+      DESCRIPTION SSTLH
+END
+
+ARMOR "SILVER STUDDED BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 1, 0, 0, 0, 500, 16, 14
+      DESCRIPTION SSTLBT
+END
+
+//WOODLAND ARMOR
+
+ARMOR "WOODLAND CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 3, 0, 0, 0, 4500, 18, 16
+      DESCRIPTION WLDCP
+      STATLINE Fatigue %4
+END
+
+ARMOR "WOODLAND LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 3, 0, 0, 0, 4500, 18, 16
+      DESCRIPTION WLDLP
+      STATLINE Fatigue %4
+END
+
+ARMOR "WOODLAND GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 1, 0, 0, 0, 1500, 18, 16
+      DESCRIPTION WLDGT
+      STATLINE Fatigue %4
+END
+
+ARMOR "WOODLAND HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 2, 0, 0, 0, 3000, 18, 16
+      DESCRIPTION WLDHL
+      STATLINE Fatigue %4
+END
+
+ARMOR "WOODLAND BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 1, 0, 0, 0, 1500, 18, 16
+      DESCRIPTION WLDBT
+      STATLINE Fatigue %4
+END
+
+
+//CHAINMAIL ARMOR
+ 
+ARMOR "RED CHAINMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION RCHMCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "RED CHAINMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION RCHMLP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "RED CHAINMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 2, 0, 0, 0, 2000, 18, 16
+      DESCRIPTION RCHGT		
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "RED CHAINMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 3, 0, 0, 0, 3000, 18, 16
+      DESCRIPTION RCHH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "RED CHAINMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 2, 0, 0, 0, 1800, 18, 16
+      DESCRIPTION RCHBT
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLUE CHAINMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION BLCHCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLUE CHAINMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION BLCHLP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLUE CHAINMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 2, 0, 0, 0, 2000, 18, 16
+      DESCRIPTION BLCHGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLUE CHAINMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 3, 0, 0, 0, 3000, 18, 16
+      DESCRIPTION BLCHH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLUE CHAINMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 2, 0, 0, 0, 1800, 18, 16
+      DESCRIPTION BLCHBT
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLACK CHAINMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION BCHCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLACK CHAINMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION BCHLP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLACK CHAINMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 2, 0, 0, 0, 2000, 18, 16
+      DESCRIPTION BCHGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLACK CHAINMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 3, 0, 0, 0, 3000, 18, 16
+      DESCRIPTION BCHH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLACK CHAINMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 2, 0, 0, 0, 1800, 18, 16
+      DESCRIPTION BCHBT
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "GOLD CHAINMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION GCHCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "GOLD CHAINMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 4, 0, 0, 0, 3600, 18, 16
+      DESCRIPTION GCHLP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "GOLD CHAINMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 2, 0, 0, 0, 2000, 18, 16
+      DESCRIPTION GCHGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "GOLD CHAINMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 3, 0, 0, 0, 3000, 18, 16
+      DESCRIPTION GCHH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "GOLD CHAINMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 2, 0, 0, 0, 1800, 18, 16
+      DESCRIPTION GCHBT
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+//SCALEMAIL ARMOR
+
+ARMOR "RED SCALEMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION RSCMCP
+      STATLINE DmgResBurn 8 AGIL -1  
+END
+
+ARMOR "RED SCALEMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION RSCMLP
+      STATLINE DmgResBurn 8 AGIL -1
+END
+
+ARMOR "RED SCALEMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION RSCMGT
+      STATLINE DmgResBurn 8
+END
+
+ARMOR "RED SCALEMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 4, 0, 0, 0, 12000, 19, 18
+      DESCRIPTION RSCMH
+      STATLINE DmgResBurn 8
+END
+
+ARMOR "RED SCALEMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION RSCMBT
+      STATLINE DmgResBurn 8
+END
+
+ARMOR "BLUE SCALEMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION BLSCMCP
+      STATLINE DmgResFreeze 8 AGIL -1  
+END
+
+ARMOR "BLUE SCALEMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION BLSCMLP
+      STATLINE DmgResFreeze 8 AGIL -1
+END
+
+ARMOR "BLUE SCALEMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION BLSCMGT
+      STATLINE DmgResFreeze 8
+END
+
+ARMOR "BLUE SCALEMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 4, 0, 0, 0, 12000, 19, 18
+      DESCRIPTION BLSCMH
+      STATLINE DmgResFreeze 8
+END
+
+ARMOR "BLUE SCALEMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION BLSCMBT
+      STATLINE DmgResFreeze 8
+END
+
+ARMOR "SILVER SCALEMAIL CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION SSCMCP
+      STATLINE DmgResMagical 6 AGIL -1  
+END
+
+ARMOR "SILVER SCALEMAIL LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 5, 0, 0, 0, 14000, 19, 18
+      DESCRIPTION SSCMLP
+      STATLINE DmgResMagical 6 AGIL -1
+END
+
+ARMOR "SILVER SCALEMAIL GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION SSCMGT
+      STATLINE DmgResmagical 6
+END
+
+ARMOR "SILVER SCALEMAIL HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 4, 0, 0, 0, 12000, 19, 18
+      DESCRIPTION SSCMH
+      STATLINE DmgResmagical 6
+END
+
+ARMOR "SILVER SCALEMAIL BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 3, 0, 0, 0, 9000, 19, 18
+      DESCRIPTION SSCMBT
+      STATLINE DmgResmagical 6
+END
+
+//BARBARIAN ARMOR
+
+ARMOR "BARBARIAN CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 5, 0, 0, 0, 12000, 19, 18
+      DESCRIPTION BRBCP
+        STATLINE damagemod 3
+END
+
+ARMOR "BARBARIAN LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 5, 0, 0, 0, 12000, 19, 18
+      DESCRIPTION BRBLP
+      STATLINE damagemod 3
+END
+
+ARMOR "BARBARIAN GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 3, 0, 0, 0, 7200, 19, 18
+      DESCRIPTION BRBGT
+      STATLINE damagemod 3
+END
+
+ARMOR "BARBARIAN HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 4, 0, 0, 0, 9600, 19, 18
+      DESCRIPTION BRBH
+      STATLINE damagemod 3
+END
+
+ARMOR "BARBARIAN BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 3, 0, 0, 0, 7200, 19, 18
+      DESCRIPTION BRBBT
+      STATLINE damagemod 3
+END
+
+
+//IRON ARMOR
+
+ARMOR "SILVER IRON CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 25200, 21, 20
+      DESCRIPTION SIRNCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "SILVER IRON LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 25200, 21, 20
+      DESCRIPTION SIRNLP
+      STATLINE DmgResmagical 0 RFLX -1
+END
+
+ARMOR "SILVER IRON GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION SIRNGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "SILVER IRON HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION SIRNH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "SILVER IRON BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION SIRNBT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLACK IRON CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 25200, 21, 20
+      DESCRIPTION BIRNCP
+      STATLINE DmgResmagical 0 AGIL -1
+END
+
+ARMOR "BLACK IRON LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 25200, 21, 20
+      DESCRIPTION BIRNLP
+      STATLINE DmgResmagical 0 RFLX -1
+END
+
+ARMOR "BLACK IRON GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION BIRNGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLACK IRON HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION BIRNHL
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "BLACK IRON BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION BIRNBT
+      STATLINE DmgResmagical 0
+END
+
+//CELTIC ARMOR
+
+ARMOR "CELTIC CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 6, 0, 0, 0, 28800, 21, 20
+      DESCRIPTION CLTCP
+      STATLINE DmgResmagical 1 DmgResburn 1
+END
+
+ARMOR "CELTIC LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 6, 0, 0, 0, 28800, 21, 20
+      DESCRIPTION CLTLP
+      STATLINE DmgResmagical 1 DmgResburn 1
+END
+
+ARMOR "CELTIC BRACERS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 4, 0, 0, 0, 19200, 21, 20
+      DESCRIPTION CLTGT
+      STATLINE DmgResmagical 1 DmgResburn 1
+END
+
+ARMOR "CELTIC HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 5, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION CLTH
+      STATLINE DmgResmagical 1 DmgResburn 1
+END
+
+ARMOR "CELTIC BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 4, 0, 0, 0, 19200, 21, 20
+      DESCRIPTION CLTBT
+      STATLINE DmgResmagical 1 DmgResburn 1
+END
+
+
+//PLATE ARMOR
+
+ARMOR "SILVER CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 22400, 21, 20
+      DESCRIPTION SPLTCP
+      STATLINE DmgResmagical 0 RFLX -1 AGIL -1
+END
+
+ARMOR "SILVER LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 22400, 21, 20
+      DESCRIPTION SPLTLP
+      STATLINE DmgResmagical 0 RFLX -1 AGIL -1
+END
+
+ARMOR "SILVER PLATE GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION SPLTGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "SILVER PLATE HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION SPLTH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "SILVER PLATE BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION SPLTBT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "GOLD CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 22400, 21, 20
+      DESCRIPTION GPLTCP
+      STATLINE DmgResmagical 0 RFLX -1 AGIL -1
+END
+
+ARMOR "GOLD LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 22400, 21, 20
+      DESCRIPTION GPLTLP
+      STATLINE DmgResmagical 0 RFLX -1 AGIL -1
+END
+
+ARMOR "GOLD PLATE GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION GPLTGT
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "GOLD PLATE HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION GPLTH
+      STATLINE DmgResmagical 0
+END
+
+ARMOR "GOLD PLATE BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 20000, 21, 20
+      DESCRIPTION GPLTBT
+      STATLINE DmgResmagical 0
+END
+
+//NIGHTSHADE ARMOR
+
+ARMOR "NIGHTSHADE CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 6, 0, 0, 0, 26400, 21, 20
+      DESCRIPTION NTSDCP
+      STATLINE DmgRespoison 5 RFLX -1 AGIL -1
+END
+
+ARMOR "NIGHTSHADE LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 6, 0, 0, 0, 26400, 21, 20
+      DESCRIPTION NTSDLP
+      STATLINE DmgRespoison 5 RFLX -1 AGIL -1
+END
+
+ARMOR "NIGHTSHADE GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 4, 0, 0, 0, 20800, 21, 20
+      DESCRIPTION NTSDGT
+      STATLINE DmgRespoison 5
+END
+
+ARMOR "NIGHTSHADE HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 5, 0, 0, 0, 26000, 21, 20
+      DESCRIPTION NTSDH
+      STATLINE DmgRespoison 5
+END
+
+ARMOR "NIGHTSHADE BOOTS"
+
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 4, 0, 0, 0, 20800, 21, 20
+      DESCRIPTION NTSDBT
+      STATLINE DmgRespoison 5
+END
+
+//DRAGON ARMOR
+
+ARMOR "RED DRAGON CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION RDDRCP
+      STATLINE DmgResburn 5 RFLX -1 AGIL -1
+END
+
+ARMOR "RED DRAGON LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION RDDRLP
+      STATLINE DmgResburn 5 RFLX -1
+END
+
+ARMOR "RED DRAGON GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION RDDRGT
+      STATLINE DmgResburn 5
+END
+
+ARMOR "RED DRAGON HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 43200, 23, 22
+      DESCRIPTION RDDRH
+      STATLINE DmgResburn 5
+END
+
+ARMOR "RED DRAGON BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION RDDRBT
+      STATLINE DmgResburn 5
+END
+
+ARMOR "BLACK DRAGON CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION BDRCP
+      STATLINE Attack %2 RFLX -1 AGIL -1
+END
+
+ARMOR "BLACK DRAGON LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION BDRLP
+      STATLINE Attack %2 RFLX -1
+END
+
+ARMOR "BLACK DRAGON GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION BDRGT
+      STATLINE Attack %2
+END
+
+ARMOR "BLACK DRAGON HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 43200, 23, 22
+      DESCRIPTION BDRH
+      STATLINE Attack %2
+END
+
+ARMOR "BLACK DRAGON BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION BDRBT
+      STATLINE Attack %2
+END
+
+ARMOR "GOLD DRAGON CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION GDRCP
+      STATLINE DmgResmagical 4 RFLX -1 AGIL -1
+END
+
+ARMOR "GOLD DRAGON LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION GDRLP
+      STATLINE DmgResmagical 4 RFLX -1
+END
+
+ARMOR "GOLD DRAGON GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION GDRGT
+      STATLINE DmgResmagical 4
+END
+
+ARMOR "GOLD DRAGON HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 43200, 23, 22
+      DESCRIPTION GDRH
+      STATLINE DmgResmagical 4
+END
+
+ARMOR "GOLD DRAGON BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION GDRBT
+      STATLINE DmgResmagical 4
+END
+
+//SPIKED ARMOR
+
+ARMOR "SPIKED CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 28000, 21, 20
+      DESCRIPTION SPCP
+      STATLINE hands %2 RFLX -1 AGIL -1
+END
+
+ARMOR "SPIKED LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 28000, 21, 20
+      DESCRIPTION SPLP
+      STATLINE hands %2 RFLX -1 AGIL -1
+END
+
+ARMOR "SPIKED GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION SPCP
+      STATLINE hands %2
+END
+
+ARMOR "SPIKED HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 28800, 21, 20
+      DESCRIPTION SPH
+      STATLINE hands %2
+END
+
+ARMOR "SPIKED BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 24000, 21, 20
+      DESCRIPTION SPBT
+      STATLINE hands %2
+END
+
+
+//NINJA ARMOR
+
+ARMOR "NINJA SHIRT"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 63000, 23, 22
+      DESCRIPTION NINCP
+	  STATLINE hands %5 AGIL 1
+END
+
+ARMOR "NINJA PANTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 63000, 23, 22
+      DESCRIPTION NINLP
+	  STATLINE hands %5 AGIL 1
+END
+
+ARMOR "NINJA GLOVES"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION NINGT
+	  STATLINE hands %5
+END
+
+ARMOR "NINJA HOOD"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 50400, 23, 22
+      DESCRIPTION NINH
+	  STATLINE hands %5
+END
+
+ARMOR "NINJA BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION NINBT
+	  STATLINE hands %5
+END
+
+//HOLY ARMOR
+
+ARMOR "HOLY CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 50400, 23, 22
+      DESCRIPTION HOLCH
+      STATLINE MaxHealthPct 3 RFLX -1 AGIL -1 
+END
+
+ARMOR "HOLY LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 54600, 23, 22
+      DESCRIPTION HOLLG
+      STATLINE MaxHealthPct 3 AGIL -1 
+END
+
+ARMOR "HOLY GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 42000, 23, 22
+      DESCRIPTION HOLGT
+      STATLINE MaxHealthPct 3 
+END
+
+ARMOR "HOLY HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 50400, 23, 22
+      DESCRIPTION HOLH
+      STATLINE MaxHealthPct 3 
+END
+
+ARMOR "HOLY BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 39000, 23, 22
+      DESCRIPTION HOLBT
+      STATLINE MaxHealthPct 3 AGIL -1 
+END
+
+
+//SAMURAI ARMOR
+
+ARMOR "SAMURAI CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 33600, 23, 22
+      DESCRIPTION SAMCP
+      STATLINE RFLX -1 AGIL -1 
+END
+
+ARMOR "SAMURAI LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 33600, 23, 22
+      DESCRIPTION SAMLP
+      STATLINE RFLX -1 AGIL -1 
+END
+
+ARMOR "SAMURAI GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 30000, 23, 22
+      DESCRIPTION SAMGT
+END
+
+ARMOR "SAMURAI HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 36000, 23, 22
+      DESCRIPTION SAMH
+END
+
+ARMOR "SAMURAI BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 27000, 23, 22
+      DESCRIPTION SAMBT
+      STATLINE AGIL -1
+END
+
+
+//GOTHIC ARMOR
+
+ARMOR "GOTHIC CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 7, 0, 0, 0, 67200, 23, 22
+      DESCRIPTION GOTHCP
+      STATLINE DmgResMagical 2 DmgResBurn 2 DmgResPoison 2 DmgResFreeze 2  RFLX -1 AGIL -1 
+END
+
+ARMOR "GOTHIC LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 7, 0, 0, 0, 67200, 23, 22
+      DESCRIPTION GOTHLP
+      STATLINE DmgResMagical 2 DmgResBurn 2 DmgResPoison 2 DmgResFreeze 2 RFLX -1 AGIL -1 
+END
+
+ARMOR "GOTHIC GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 5, 0, 0, 0, 54000, 23, 22
+      DESCRIPTION GOTHGT
+      STATLINE DmgResMagical 2 DmgResBurn 2 DmgResPoison 2 DmgResFreeze 2
+END
+
+ARMOR "GOTHIC HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 6, 0, 0, 0, 64800, 23, 22
+      DESCRIPTION GOTHH
+      STATLINE DmgResMagical 2 DmgResBurn 2 DmgResPoison 2 DmgResFreeze 2
+END
+
+ARMOR "GOTHIC BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 5, 0, 0, 0, 51000, 23, 22
+      DESCRIPTION GOTHBT
+      STATLINE DmgResMagical 2 DmgResBurn 2 DmgResPoison 2 DmgResFreeze 2  RFLX -1
+END
+
+
+//BERSERKER ARMOR
+
+ARMOR "BERSERKER CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 6, 0, 0, 0, 48000, 21, 20
+      DESCRIPTION BRSCP
+      STATLINE FAT %15  
+END
+
+ARMOR "BERSERKER LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 6, 0, 0, 0, 48000, 21, 20
+      DESCRIPTION BRSLP
+      STATLINE FAT %15
+END
+
+ARMOR "BERSERKER GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 4, 0, 0, 0, 32000, 21, 20
+      DESCRIPTION BRSGT
+      STATLINE FAT %15  
+END
+
+ARMOR "BERSERKER HELMET"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 0, 5, 0, 0, 0, 40000, 21, 20
+      DESCRIPTION BRSH
+      STATLINE FAT %15  
+END
+
+ARMOR "BERSERKER BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 4, 0, 0, 0, 32000, 21, 20
+      DESCRIPTION BRSBT
+      STATLINE FAT %15  
+END
+
+
+//NAKRANOTH ARMOR
+
+ARMOR "NAKRANOTH CHEST PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 2, 9, 0, 0, 0, 162000, 23, 22
+      DESCRIPTION NAKCP
+      STATLINE MaxManaPct 15 MaxHealthPct 15
+END
+
+ARMOR "NAKRANOTH GAUNTLETS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 3, 8, 0, 0, 0, 144000, 23, 22
+      DESCRIPTION NAKGA
+      STATLINE MaxManaPct 15 MaxHealthPct 15
+END
+
+ARMOR "NAKRANOTH LEG PLATE"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 9, 9, 0, 0, 0, 162000, 23, 22
+      DESCRIPTION NAKLP
+      STATLINE MaxManaPct 15 MaxHealthPct 15
+END
+
+ARMOR "NAKRANOTH BOOTS"
+BEGIN
+      // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+      BASICMODS 10, 8, 0, 0, 0, 144000, 23, 22
+      DESCRIPTION NAKBT
+      STATLINE MaxManaPct 15 MaxHealthPct 15
+END
+
+//Magic Items
+ARMOR "SERPENT RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 0, 0, 1000, 0, 0 
+     STATLINE MaxHealthFlat 100  
+END
+
+ARMOR "EMERALD RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 10, 0, 800, 0, 0 
+	 STATLINE DmgResPoison 10 
+END
+
+ARMOR "FENRUS COLLAR"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 2000, 0, 0 
+     STATLINE MaxManaPct 50  
+END
+
+ARMOR "AMULET OF CHANNELING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 1500, 0, 0 
+     STATLINE ManaCostPct 10  
+END
+
+ARMOR "BAND OF SHADOWS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 800, 0, 0 
+     STATLINE Hands 15%
+END
+
+ARMOR "BLACKEN RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 750, 0, 0 
+     STATLINE Stealth 15%
+END
+
+ARMOR "BRACELET OF FORTUNE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 750, 0, 0 
+     STATLINE LUCK 2  
+END
+
+ARMOR "IVORY PENDANT"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 500, 0, 0 
+     STATLINE ACBonus 2  
+END
+
+ARMOR "BAND OF REGENERATION"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 3000, 0, 0 
+     STATLINE HealthPct 60  
+END
+
+ARMOR "AMULET OF THUNDERBOLTS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 2500, 0, 0 
+     STATLINE DamageMod 10  
+END
+
+ARMOR "VENOM RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 0, 0, 1600, 0, 0 
+     STATLINE DmgResPoison 20  
+END
+
+ARMOR "CESTUS OF SLICING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 2, 0, 0, 0, 5000, 0, 0 
+     STATLINE EdgeBonus 25
+END
+
+ARMOR "SPIRIT PENDANT"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 1500, 0, 0 
+     STATLINE CONS 2  
+END
+
+ARMOR "SIGIL RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 0, 0, 4000, 0, 0 
+     STATLINE MaxManaFlat 300
+END
+
+ARMOR "FIRE RUBY RING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 0, 0, 2500, 0, 0 
+     STATLINE DmgResBurn 20
+END
+
+ARMOR "EMERALD COLLAR"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 3200, 0, 0 
+     STATLINE DmgResPoison 30
+END
+
+ARMOR "AMULET OF CUNNING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 2000, 0, 0 
+     STATLINE MIND 2  
+END
+
+ARMOR "RING OF THE ARCANE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 6, 0, 0, 0, 0, 6000, 0, 0 
+     STATLINE   MaxManaFlat 250 SpellDamageInc 10
+END
+
+ARMOR "GAUNTLETS OF CHAOS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 2, 0, 20, 0, 7500, 0, 0 
+     STATLINE DmgResMagical 20 DmgResBurn 20 DmgResPoison 20 DmgResFreeze 20  
+END
+
+ARMOR "DRAGON EYE PENDANT"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 7500, 0, 0 
+     STATLINE MaxHealthFlat 250 MaxManaFlat 250
+END
+
+ARMOR "EARTHEN GAUNTLETS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 2, 0, 0, 0, 2000, 0, 0 
+     STATLINE STRN 2
+END
+
+ARMOR "ALPHA GEM NECKLACE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 10000, 0, 0 
+     STATLINE MaxManaFlat 400 SpellDamageInc 15
+END
+
+ARMOR "EMERALD BRACELET"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 10000, 0, 0 
+     STATLINE DmgResPoison 60  
+END
+
+ARMOR "GLOVES OF STRIKING"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 0, 0, 0, 0, 4000, 0, 0 
+     STATLINE AGIL 2
+END
+
+ARMOR "HELLFIRE GAUNTLETS"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 3, 0, 0, 0, 0, 8000, 0, 0 
+     STATLINE STRN 3 AGIL 3
+END
+
+ARMOR "NECKLACE OF COURAGE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 6000, 0, 0 
+     STATLINE SpellDamageInc 20
+END
+
+ARMOR "BAND OF FURY"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 10000, 0, 0 
+     STATLINE MaxFatiguePct 100
+END
+
+ARMOR "ICEN BAND"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 5, 0, 0, 0, 0, 10000, 0, 0 
+	 STATLINE DmgResFreeze 60
+END
+
+ARMOR "AMULET OF POWER"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 10000, 0, 0 
+     STATLINE DamageMod 20
+END
+
+ARMOR "WYRMTOOTH NECKLACE"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 15000, 0, 0 
+     STATLINE DmgResPoison 100 STRN 2 CONS 2 
+END
+
+ARMOR "RUBERT"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 50000, 0, 0 
+     STATLINE LEV 1
+END
+
+ARMOR "GILMOR"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 100000, 0, 0 
+     STATLINE LEV 2
+END
+
+ARMOR "BARRY"
+BEGIN
+     // BASICMODS eqslot, protection, combining, resistpoison, stealth, value, minstrength, minconstitution
+     BASICMODS 1, 0, 0, 0, 0, 150000, 0, 0 
+     STATLINE LEV 3
+END
