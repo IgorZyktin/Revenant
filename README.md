@@ -65,6 +65,11 @@ Already processed automaps:
 Tool that converts *.i2d files into images. One-frame files gets turned into png, 
 multi-frame outputs as gifs.
 
+![Potion](./i2d_images/potionorange_s00_invanim.gif "Potion")
+![Rotating wall](./i2d_images/rotatewall_s02_anim.gif "Rotating wall")
+![Coffin](./i2d_images/cavcoffin01.png "Coffin")
+![Grate](./i2d_images/grate_s00_still.png "Grate")
+
 Convert single file:
 
 ```shell
