@@ -27,7 +27,7 @@ rename it to "Ahkuilon.zip" and then unpack.
 How to stitch them:
 
 ```shell
-uv run python automaps.py --source-folder C:\Games\Revenant\Modules\Ahkuilon\Automaps
+uv run python automaps.py --source-folder "C:\Games\Revenant\Modules\Ahkuilon\Automaps"
 ```
 
 Already processed automaps:
@@ -59,3 +59,26 @@ Already processed automaps:
 * [Other world 8](./automaps/Automaps_58.png)
 * [Demo outdoor](./automaps/demo_10.png)
 * [Demo underground](./automaps/demo_30.png)
+
+## I2D image processing
+
+Tool that converts *.i2d files into images. One-frame files gets turned into png, 
+multi-frame outputs as gifs.
+
+Convert single file:
+
+```shell
+uv run python i2d_to_image.py "C:\Games\Revenant\imagery\Imagery\Equip\AoRogoss.I2D"
+```
+
+Convert whole catalog recursively into new folder:
+
+```shell
+uv run python i2d_to_image.py "C:\Games\Revenant\imagery\Imagery" -r -o images
+```
+
+Show structure without saving:
+
+```shell
+uv run python i2d_to_image.py --info AoRogoss.I2D
+```
